@@ -1,21 +1,21 @@
-﻿@{
-#pragma warning disable CS8602
-}
-@model IEnumerable<string>
 @{
-    Layout = null;
+    #pragma warning disable CS8602 // Disable nullable warning
+}
+@model IEnumerable<string>  <!-- Define the model as a collection of strings -->
+@{
+    Layout = null;  // Set Layout to null, meaning no layout page is used
 }
 <!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Language Features</title>
+    <title>Language Features</title>  <!-- Set the page title -->
 </head>
 <body>
     <ul>
-        @foreach (string s in Model)
+        @foreach (string s in Model)  <!-- Iterate through the model, which is a collection of strings -->
         {
-            <li>@s</li>
+            <li>@s</li>  <!-- Display each string in a list item -->
         }
     </ul>
 </body>
