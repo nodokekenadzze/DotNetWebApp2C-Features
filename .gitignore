@@ -1,0 +1,33 @@
+# Ignore build outputs
+/bin/
+/obj/
+
+# User-specific files
+.vscode/
+.idea/
+
+# .NET-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Configuration files
+appsettings.Development.json
+appsettings.json
+
+# Windows installer files
+Thumbs.db
+Desktop.ini
+
+# Log files
+*.log
+
+# Ignore the default output directory from Visual Studio
+.vs/
+
+# Ignore the Visual Studio Code settings folder
+.vscode/
+
+# Ignore JetBrains Rider settings
+.idea/
