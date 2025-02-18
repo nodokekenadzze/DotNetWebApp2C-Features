@@ -1,22 +1,28 @@
 @{
     #pragma warning disable CS8602 // Disable nullable warning
 }
-@model IEnumerable<string>  <!-- Define the model as a collection of strings -->
-@{
+
+@model IEnumerable<string>
+    <!-- Define the model as a collection of strings -->
+
+    @{
     Layout = null;  // Set Layout to null, meaning no layout page is used
-}
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Language Features</title>  <!-- Set the page title -->
-</head>
-<body>
-    <ul>
-        @foreach (string s in Model)  <!-- Iterate through the model, which is a collection of strings -->
+    }
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Language Features</title>  <!-- Set the page title -->
+    </head>
+    <body>
+        <ul>
+            @* Ensure the `foreach` loop is properly wrapped in curly braces *@
+            @foreach (var s in Model)
         {
-            <li>@s</li>  <!-- Display each string in a list item -->
+            <li>@s</li>
+  <!-- Display each string in a list item -->
         }
-    </ul>
-</body>
+        </ul>
+    </body>
 </html>

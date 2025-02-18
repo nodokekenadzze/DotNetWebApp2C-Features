@@ -1,5 +1,4 @@
-﻿
-namespace LanguageFeatures.Models
+﻿namespace LanguageFeatures.Models
 {
     // Product class represents a product with a name and price
     public class Product
